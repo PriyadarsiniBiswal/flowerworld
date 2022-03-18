@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    background: rgb(160, 160, 214);
+    background-size: cover;
+    background-position: center center;
+    
+}
+.logo {
+    display: flex;
+    padding: 10px 0 0 50px;
+    cursor: pointer;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;   
+}
+.logo h3 {
+    padding: 10px 0 0 5px;
+}
+
+.main-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 85%;
+    margin: 20px;
+}
+
+.card-container{
+  flex-basis: 21%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+ 
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card-container:hover .shadow {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(rgba(14, 7, 112, 0.3), rgba(14, 7, 112, 0.5));
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.card-container img {
+    width: 100%;
+    height: 280px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+}
+.layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.layer h3 {
+    color: orange;
+    text-align: left;
+    padding: 5px 0 5px 15px;
+    font-size: 1.1rem;
+}
+.layer p {
+    color: #eee;
+    text-align: justify;
+    line-height: 1;
+    font-size: 0.8rem;
+    padding: 0 7px;
+}
+
+/*---------------------------------------2nd Page-------------------------------------------------------------*/
+  .player {
+    display: none;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    position: absolute;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    
+}
+ .player .video-play  {
+   box-shadow: 0 0 10px 5px #333333a1;
+   display: inline-block;
+   height: 80%;
+   width: 600px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: black;
+   border-radius: 10px;
+   position: relative;
+   cursor: pointer;
+}
+  .player .video-play video {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;   
+}
+.player .content {
+     position: absolute;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+}
+.player .video-play .content h3{
+    color: rgb(5, 5, 150);
+    padding: 15px;
+}
+.player .video-play .content p {
+    color: orangered;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1;
+    padding: 60px 100px 0 100px;
+    font-size: 1rem;
+}
+ .player .video-play .show-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+ .player .show-box .play-btn {
+   background: green;
+   color: #eee;
+   padding: 0.4rem 1rem;
+   border: none;
+   border-radius: 5px;
+   overflow: hidden;
+   cursor: pointer;
+   font-size: 1rem;
+}
+  .player .show-box .cancel-btn {
+    background: rgb(167, 6, 6);
+    color: #eee;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 1rem;
+ }
+  .player.active {
+    display: flex;
+   height: 100vh;
+   visibility: visible;
+   top: 20%;
+   left: 0;
+   transform: translate(-50% -50%) scale(1);
+}
+
+/*--------------------------------3rd Page---------------------------------------------*/
+
+.playnow {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    top: 0;
+    left: 0;
+    border: 10px solid rgba(223, 13, 13, 0.5);
+}
+.playnow video {
+   width: 300px;
+}
+
+.playnow p {
+    color: #eee;
+    padding-top: 1rem;
+
+}
+
+
+
